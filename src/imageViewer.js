@@ -1,11 +1,18 @@
-import big from '../assets/big.jpg';
+// import big from '../assets/big.jpg';
 import small from '../assets/small.jpg';
 import '../styles/imageViewer.css';
 
 
 
+export default () => {
+    console.log(`called imageViewer`);
+    const smallImage = document.createElement('img');
+    smallImage.src = small;
 
-const image = document.createElement('img');
-image.src = 'http://lorempixel.com/400/400';
+    document.body.appendChild(smallImage);
+}
 
-document.body.appendChild(image);
+// const bigImage = document.createElement('img');
+// bigImage.src = big;
+
+// document.body.appendChild(bigImage);
