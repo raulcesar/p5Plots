@@ -5,23 +5,19 @@ import 'p5';
 
 window.setup = function () {
   console.log("Setup")
+  createCanvas(640, 480);
 }
 window.draw = function () {
-  ellipse(50,50,80,80);
+  if (mouseIsPressed) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  ellipse(mouseX, mouseY, 80, 80);
 }
 
 // // const tot = sum(10, 3);
 // // console.log(`tot: ${tot}`);
-
-// b.bonsai.run(document.getElementById('movie'), {
-//     code: function () {
-//         new Rect(10, 10, 100, 100)
-//             .addTo(stage)
-//             .attr('fillColor', 'green');
-//     },
-//     width: 500,
-//     height: 400
-// });
 
 // const button = document.createElement('button');
 // button.innerText = 'click me';
