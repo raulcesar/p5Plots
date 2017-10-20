@@ -16,13 +16,6 @@ const config = {
                 use: 'babel-loader',
                 exclude: /node_modules/
             },
-            // {
-            //     test: /\.(css|styl)$/,
-            //     use: ExtractTextPlugin.extract({
-            //         fallback: 'style-loader',
-            //         use: 'css-loader'
-            //     })
-            // },
             {
                 test: /\.styl$/,
                 use: 
